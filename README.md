@@ -7,14 +7,14 @@ A javascript framework for building mobile web applications.
 * Plugin architecture
 * Zepto-compatible
 * Works with PhoneGap, using the appropriate plugin provided.
-* Framework pieces can be easily expanded/replaced (Router, Template Engine, Model, Animator, etc..)
+* Framework parts can be easily expanded/replaced (Router, Template Engine, Model, Animator, etc..)
 
 
 __Contributors__
 
 * [ShadowCloud](https://github.com/ShadowCloud)
 
-This is still under development, contributors are welcome.
+_This is still under development, contributors are welcome._
 
 
 Dependencies
@@ -30,8 +30,15 @@ The core framework dependencies are:
 Samples
 -------
 
-You can download and try the sample apps, for the browser and Android (using the PhoneGap plugin).
+You can download and try the sample apps:
 
+__Browser App__
+
+You just need to host the app (I use Dropbox for simplicity) and navigate to the index.html file in the root folder
+
+__Android App__
+
+Create a new Android project, the app uses some of the device features provided by PhoneGap
 
 Feeback
 -------
