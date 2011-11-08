@@ -34,22 +34,6 @@ var Brumobile = (function($) {
 					success(data);
 				}
 				else alert("Error loading script: " + url);
-				/*
-				var script = document.createElement('script');
-				script.async = "async";
-				script.src = url;
-				script.onload = script.onreadystatechange = function( _, abort ) {
-					if ( abort || !script.readyState || /loaded|complete/.test( script.readyState ) ) {
-						script.onload = script.onreadystatechange = null;
-						$(script).remove();
-						script = undefined;
-						if ( !abort ) {
-							success(data);
-						}
-					}
-				};
-    			$('head').append(script);
-    			*/
 			},
 			error: function(xhr, status) {
 				alert("Error: " + xhr.statusText);
