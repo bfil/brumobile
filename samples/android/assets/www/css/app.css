@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+}
+#app {
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
+	font-family: "Helvetica Neue", Helvetica;
+	overflow-x: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+#app .selectable, #app input, #app textarea {
+	-webkit-user-select: auto;
+}
+#app > * {
+	display: none;
+	-webkit-box-sizing: border-box;
+	left: 0;
+	min-height: 100%;
+	overflow-x: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	/*-webkit-backface-visibility: hidden;*/
+}
+#app > .current {
+	display: block !important;
+	z-index: 10;
+}

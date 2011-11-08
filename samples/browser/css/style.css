@@ -1,0 +1,69 @@
+#app {
+	background: #2C3F8C;
+}
+#app > div {
+	background: #2C3F8C;
+}
+#app * {
+	padding: 5px;
+}
+body {
+    text-align: center;
+    color: #B0E0EA;
+}
+h1 {
+	color: #aa0;
+	text-shadow: 1px 1px 4px #555;
+}
+a.link {
+	color: #f81;
+	border: 2px dotted #579;
+	-webkit-border-radius: 12px;
+	padding: 5px;
+	display: block;
+	margin: 10px auto;
+	text-decoration: none;
+	font-size: 20px;
+}
+a.link.active {
+	color: #579;
+	border: 2px dotted #f81;
+}
+span {
+	font-size: 20px;
+}
+.title {
+	font-size: 20px;
+}
+#angle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #F23636;
+}
+a.button {
+	color: #f81;
+	margin: 10px auto;
+	font-size: 26px;
+	display: block;
+	width: 180px;
+	border: 2px solid #147;
+	-webkit-border-radius: 12px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.01, rgb(17,29,69)),
+	    color-stop(0.86, rgb(82,105,200))
+	);
+}
+a.button.active {
+	opacity: 0.7;
+}
+#pic {
+	margin: auto;
+	padding: 0px;
+	display: block;
+	width: 280px;
+	height: 210px;
+	border: 3px solid #B0E0EA;
+}
