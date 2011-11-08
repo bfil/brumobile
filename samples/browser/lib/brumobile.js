@@ -238,27 +238,6 @@ var Brumobile = (function($) {
 	        var fromPage = $(Brumobile.config.appContainerSelector + " > div").first();
 	        
 	        toPage.trigger('pageAnimationStart');
-	
-	        if ($.support.animationEvents && Brumobile.config.anim.enabled && animation  && animation != Brumobile.config.anim.noAnim) {
-	        	
-	            $.tapReady(false);
-	            
-	            fromPage.unbind('webkitTransitionEnd');
-	            toPage.bind('webkitTransitionEnd', navigationEndHandler);
-	            
-	            scrollTo(0, 0);
-	            
-	            toPage.addClass(animation + ' in current');
-	            fromPage.addClass(animation + ' out');
-	            setTimeout(function() {                	
-	            	toPage.addClass('animate');
-	            	fromPage.addClass('animate');
-	            }, 5);
-	
-	        } else {
-	            toPage.addClass('current');
-	            navigationEndHandler();
-	        }
 	        
 	        function navigationEndHandler(event) {
 	        	
@@ -273,6 +252,27 @@ var Brumobile = (function($) {
 	            $('input').removeAttr('disabled');
 	            
 	        }
+	
+	        if ($.support.animationEvents && Brumobile.config.anim.enabled && animation  && animation != Brumobile.config.anim.noAnim) {
+	        	
+	            $.tapReady(false);
+	            
+	            fromPage.bind('webkitTransitionEnd', navigationEndHandler);
+	            fromPage.bind('transitionend', navigationEndHandler);
+	            
+	            scrollTo(0, 0);
+	            
+	            toPage.addClass(animation + ' in current');
+	            fromPage.addClass(animation + ' out');
+	            setTimeout(function() {                	
+	            	toPage.addClass('animate');
+	            	fromPage.addClass('animate');
+	            }, 5);
+	
+	        } else {
+	            toPage.addClass('current');
+	            navigationEndHandler();
+	        }	        
 	        return true;
 	    }
 	    
