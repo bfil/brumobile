@@ -1,7 +1,7 @@
 Brumobile.Plugin.define("controllers-loader",
 	function () {
 		var plugin = this;
-		var config = plugin.config;
+		var config = plugin.config || {};
 		
 		var controllersLoaded = 0;
 		if(config.controllers && config.controllers.length > 0) {

@@ -1,7 +1,7 @@
 Brumobile.Plugin.define("models-loader",
 	function () {
 		var plugin = this;
-		var config = plugin.config;
+		var config = plugin.config || {};
 		
 		var modelsLoaded = 0;
 		if(config.models && config.models.length > 0) {

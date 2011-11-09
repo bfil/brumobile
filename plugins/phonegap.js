@@ -1,7 +1,7 @@
 Brumobile.Plugin.define("phonegap",
 	function () {
 		var plugin = this;
-		var config = plugin.config;
+		var config = plugin.config || {};
 		
 		function backKeyDown() {
 			if($.tapReady()) {

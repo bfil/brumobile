@@ -102,7 +102,9 @@ var Brumobile = (function($) {
 	var Navigator = (function() {
 		
 		function navigate(options) {
+			
 			if(options && $.tapReady()) {
+				$.tapReady(false);
 				var view = Brumobile.Router.route(options.controller, options.action, options.params, function(viewName, context) {
 						
 					Brumobile.Tmpl.get(viewName, function(html) {
@@ -254,8 +256,6 @@ var Brumobile = (function($) {
 	        }
 	
 	        if ($.support.animationEvents && Brumobile.config.anim.enabled && animation  && animation != Brumobile.config.anim.noAnim) {
-	        	
-	            $.tapReady(false);
 	            
 	            fromPage.bind('webkitTransitionEnd', navigationEndHandler);
 	            fromPage.bind('transitionend', navigationEndHandler);
