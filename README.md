@@ -6,7 +6,7 @@ A javascript framework for building mobile web applications.
 * MVC framework
 * Plugin architecture
 * Compatible with Zepto
-* Compatible with [Phonegap](http://phonega.com) (using the phonegap.js plugin provided).
+* Compatible with <a href="http://phonegap.com/" target="_blank">PhoneGap</a> (using the phonegap.js plugin provided).
 * Framework components (Router, Template Engine, Model, Animator, etc..) can be easily expanded/replaced.
 
 
@@ -14,7 +14,7 @@ __Contributors__
 
 * [ShadowCloud](https://github.com/ShadowCloud)
 
-_This is still under development, docs are still missing, but they'll be coming soon, contributors are welcome._
+_This is still under development, documentation is still missing, but it will be coming soon, contributors are welcome._
 
 
 Dependencies
