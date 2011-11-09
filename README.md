@@ -3,18 +3,18 @@ Brumobile
 
 A javascript framework for building mobile web applications.
 
-* MVC-enabled
+* MVC framework
 * Plugin architecture
-* Zepto-compatible
-* Works with PhoneGap, using the appropriate plugin provided.
-* Framework parts can be easily expanded/replaced (Router, Template Engine, Model, Animator, etc..)
+* Compatible with Zepto
+* Compatible with [Phonegap](http://phonega.com) (using the phonegap.js plugin provided).
+* Framework components (Router, Template Engine, Model, Animator, etc..) can be easily expanded/replaced.
 
 
 __Contributors__
 
 * [ShadowCloud](https://github.com/ShadowCloud)
 
-_This is still under development, contributors are welcome._
+_This is still under development, docs are still missing, but they'll be coming soon, contributors are welcome._
 
 
 Dependencies
@@ -22,9 +22,9 @@ Dependencies
 
 The core framework dependencies are:
 
-* Zepto or jQuery
+* Zepto or jQuery (default is Zepto)
 * Mustache
-* jQTouch (a modified version that has only the touch event handling)
+* jQTouch (a modified version that contains only the touch event handling)
 
 
 Samples
@@ -38,7 +38,7 @@ You just need to host the app (I use Dropbox for simplicity) and navigate to the
 
 __Android App__
 
-Create a new Android project, the app uses some of the device features provided by PhoneGap
+Create a new Android project, the app uses some of the device features provided by PhoneGap 1.1.0
 
 Feeback
 -------
