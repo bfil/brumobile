@@ -3,14 +3,7 @@ Brumobile.View.define(function() {
 	var view = this;
 	
 	view.initialize = function(done) {
-		Settings.get("name", function(val) {
-			if(val) {
-				$("#name").val(val);
-				done();
-			}	
-			else done();
-		})
-		
+		done();
 	};
 	
 	view.onShow = function() {
