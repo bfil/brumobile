@@ -48,7 +48,8 @@ Create a new Android project, the app uses some of the device features provided 
 Feeback
 -------
 
-If you experience any problem or found any bug I would be glad to receive a feedback to verify and address the issue
+If you find any issue use the appropriate section.
+Use pull requests if you would like to contribute by building new plugins.
 
 
 License
