@@ -17,7 +17,7 @@ at runtime should be avoided in a producion browser-based environment by bundlin
 
 __Contributors__
 
-* [ShadowCloud](https://github.com/ShadowCloud)
+* [bfil](https://github.com/bfil)
 
 _Contributors for plugins are welcome._
 
